@@ -33,9 +33,9 @@ int main()
 	// the value of the int variable was changed to the value of the reference
 
 	// output the address of the int variable
-	cout << &somenumber << endl;
+	//cout << &somenumber << endl;
 	// output the address of the int reference
-	cout << &reference << endl;
+	//cout << &reference << endl;
 	// are the addresses the same or different? (insert answer)
 	// The addresses are actually the same because it references the int variables address
 
@@ -45,13 +45,14 @@ int main()
 	// create a function above main() called Square that takes in an int parameter
 	// in the function, multiply the int parameter by itself and assign it back to the parameter (i = i * i)
 	// call the Square function with the int variable created in the REFERENCE section
-	somenumber = square();
+	square(somenumber);
 
 	// output the int variable to the console
 	cout << somenumber << endl;
 
 	// !! notice how the variable has not changed, this is because we only passed the value to the function !!
 	// change the Square function to take a int reference
+	cout << square(reference) << endl;
 	// !! notice how the calling variable has now changed, this is because we 'passed by reference' !!
 	// !! when a function takes a reference parameter, any changes to the parameter changes the calling variable ""
 
@@ -59,6 +60,7 @@ int main()
 	// 
 	// declare an int pointer, set it to nullptr (it points to nothing)
 	// set the int pointer to the address of the int variable created in the REFERENCE section
+	int ptr-> nullptr;
 
 	// output the value of the pointer
 	// what is this address that the pointer is pointing to? (insert answer)
